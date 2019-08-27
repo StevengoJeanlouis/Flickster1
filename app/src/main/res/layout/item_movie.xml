@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        tools:srcCompat="@tools:sample/avatars[9]" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="280dp"
+        android:layout_height="62dp"
+        android:layout_above="@+id/tvOverview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:textSize="24sp"
+        tools:text='"John Wick: Chapter 3 – Parabellum"' />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="279dp"
+        android:layout_height="156dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="512dp"
+        android:text='"Super-assassin John Wick returns with a $14 million price tag on his head and an army of bounty-hunting killers on his trail. After killing a member of the shadowy international assassin’s guild, the High Table, John Wick is excommunicado, but the world’s most ruthless hit men and women await his every turn.' />
+</RelativeLayout>
